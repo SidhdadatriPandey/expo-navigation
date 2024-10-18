@@ -17,9 +17,21 @@ const CustomDrowerContent = ({ props }: any) => {
             />
 
             <DrawerItem
+                icon={({ color, size }) => <Fontisto name="heart" size={24} color="black" />}
+                label={"Setting"}
+                onPress={() => router.push('/Profile')}
+            />
+
+            <DrawerItem
+                icon={({ color, size }) => <Fontisto name="heart" size={24} color="black" />}
+                label={"Setting"}
+                onPress={() => router.push('/Favorate')}
+            />
+
+            <DrawerItem
                 icon={({ color, size }) => <Fontisto name="player-settings" size={24} color="black" />}
                 label={"Setting"}
-                onPress={() => router.push('/Setting')}
+                onPress={() => router.push('/Profile')}
             />
         </DrawerContentScrollView>
     )
